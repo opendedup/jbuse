@@ -190,7 +190,7 @@ TRACE("R - off=%lu, len=%u\n", offset, len);
       jerrno = (*env)->CallIntMethod(env, (jobject)userdata, BUSE->method.read__Ljava_nio_ByteBuffer_IJ, jBuf, (jint)len,(jlong)offset);
       exception_check_jerrno(env, &jerrno);
        
-   		TRACE("R - nread=%u\n", len);
+   	  TRACE("R - nread=%u\n", len);
       break;
    }
 
@@ -218,7 +218,7 @@ TRACE("R - off=%lu, len=%u\n", offset, len);
       if (exception_check_jerrno(env, &jerrno)) break;
       jerrno = (*env)->CallIntMethod(env, (jobject)userdata, BUSE->method.write__Ljava_nio_ByteBuffer_IJ, jBuf, (jint)len,(jlong)offset);
       exception_check_jerrno(env, &jerrno);
-   		TRACE("W - nwrite=%u\n", len);
+   	  TRACE("W - nwrite=%u jerrno=%d\n", len, jerrno);
       break;
    }
 

@@ -11,8 +11,7 @@
 #ifndef _JAVAFS_H_
 #define _JAVAFS_H_
 
-#define FUSE_USE_VERSION 22
-#include "../buse/buse.h"
+#include "buse.h"
 
 #include <stdio.h>
 #include <stdlib.h>

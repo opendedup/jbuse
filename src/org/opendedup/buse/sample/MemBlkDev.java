@@ -26,6 +26,7 @@ public class MemBlkDev implements BUSE {
 	public MemBlkDev(int sz) {
 		mem = ByteBuffer.allocateDirect(sz);
 	}
+	
 
 	
 	@Override
